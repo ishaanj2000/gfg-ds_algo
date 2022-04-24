@@ -1,0 +1,19 @@
+def subArraySum(self,arr, n, s): 
+    cs = 0
+    k = 0 
+        
+    for i in range(n):
+           
+        cs += arr[i]
+           
+        if cs > s:
+                
+            while cs>s:
+                cs-= arr[k]
+                k+=1
+            
+        if cs == s:
+            return [k+1, i+1]
+            break
+        
+    return [-1]
