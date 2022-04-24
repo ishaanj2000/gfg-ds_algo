@@ -3,7 +3,6 @@ def subArraySum(self,arr, n, s):
     k = 0 
         
     for i in range(n):
-           
         cs += arr[i]
            
         if cs > s:
